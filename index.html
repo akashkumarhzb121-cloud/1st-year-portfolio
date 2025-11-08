@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Kumar - Frontend Developer & Engineering Student</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+        }
+        
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #667eea;
+        }
+        
+        .project-image {
+            background: linear-gradient(45deg, #f0f2f5, #e1e8ed);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #667eea;
+        }
+        
+        .hobby-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .hobby-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">Akash Kumar</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-blue-600">Home</a>
+                    <a href="#skills" class="nav-link text-gray-600 hover:text-blue-600">Skills</a>
+                    <a href="#projects" class="nav-link text-gray-600 hover:text-blue-600">Projects</a>
+                    <a href="#hobbies" class="nav-link text-gray-600 hover:text-blue-600">Hobbies</a>
+                    <a href="#contact" class="nav-link text-gray-600 hover:text-blue-600">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="#home" class="block py-2 text-gray-600">Home</a>
+                <a href="#skills" class="block py-2 text-gray-600">Skills</a>
+                <a href="#projects" class="block py-2 text-gray-600">Projects</a>
+                <a href="#hobbies" class="block py-2 text-gray-600">Hobbies</a>
+                <a href="#contact" class="block py-2 text-gray-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-32 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-8">
+                <div class="w-32 h-32 bg-white rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <i class="fas fa-user text-6xl text-gray-600"></i>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                    Hello, I'm <span class="text-yellow-300">Akash Kumar</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Passionate Engineering Student & Frontend Developer
+                </p>
+                <p class="text-lg max-w-3xl mx-auto mb-8 opacity-80">
+                    Currently pursuing BTech in Engineering, I specialize in creating dynamic and engaging web experiences. My goal is to apply innovative frontend technologies to solve real-world problems and deliver seamless user experiences.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
+                <p class="text-xl text-gray-600">Technologies and skills I work with</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-html5 text-3xl text-orange-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">HTML & CSS</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-5/6"></div>
+                    </div>
+                    <p class="text-gray-600">Advanced proficiency in semantic HTML and modern CSS</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-js-square text-3xl text-yellow-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">JavaScript</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-4/5"></div>
+                    </div>
+                    <p class="text-gray-600">Dynamic web applications and interactive user interfaces</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-mobile-alt text-3xl text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Responsive Design</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-5/6"></div>
+                    </div>
+                    <p class="text-gray-600">Mobile-first approach and cross-device compatibility</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-paint-brush text-3xl text-pink-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">UI/UX Fundamentals</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-3/4"></div>
+                    </div>
+                    <p class="text-gray-600">User-centered design principles and best practices</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-git-alt text-3xl text-red-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Version Control (Git)</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-4/5"></div>
+                    </div>
+                    <p class="text-gray-600">Collaborative development and code management</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-users text-3xl text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-semibold">Team Collaboration</h3>
+                    </div>
+                    <div class="bg-gray-200 rounded-full h-2 mb-2">
+                        <div class="skill-bar w-5/6"></div>
+                    </div>
+                    <p class="text-gray-600">Effective communication and project coordination</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <p class="text-xl text-gray-600">Some of my recent work and achievements</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="project-image h-48">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Personal Portfolio Website</h3>
+                        <p class="text-gray-600 mb-4">Built with HTML, CSS, and JavaScript featuring a responsive layout and clean design. Showcases modern web development practices and user-friendly navigation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4"><strong>Impact:</strong> Learned responsive design principles and improved CSS Grid/Flexbox skills</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="project-image h-48">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Weather App</h3>
+                        <p class="text-gray-600 mb-4">Uses API to fetch real-time weather data and display information with an interactive UI. Leverages JavaScript and CSS Grid for responsive design and smooth user experience.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">API Integration</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">CSS Grid</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4"><strong>Impact:</strong> Mastered API integration and asynchronous JavaScript programming</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="project-image h-48">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">Interactive to-do application with drag-and-drop functionality, local storage, and priority management. Built to enhance productivity and organization skills.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Local Storage</span>
+                            <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Drag & Drop</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4"><strong>Impact:</strong> Enhanced understanding of DOM manipulation and user interaction patterns</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="project-image h-48">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-3">Scientific Calculator</h3>
+                        <p class="text-gray-600 mb-4">Advanced calculator with scientific functions, memory operations, and history tracking. Features a clean interface with keyboard support and error handling.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Math.js</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mb-4"><strong>Impact:</strong> Improved problem-solving skills and mathematical computation handling</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fab fa-github mr-1"></i> GitHub
+                            </a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold">
+                                <i class="fas fa-external-link-alt mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Hobbies & Interests</h2>
+                <p class="text-xl text-gray-600">What I enjoy doing in my free time</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-code text-5xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Coding Side Projects</h3>
+                    <p class="text-gray-600">Exploring new technologies and building innovative solutions in my spare time</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-baseball-ball text-5xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Playing Cricket</h3>
+                    <p class="text-gray-600">Passionate about cricket, enjoy playing with friends and following international matches</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-book-open text-5xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Reading Tech Blogs</h3>
+                    <p class="text-gray-600">Staying updated with latest technology trends and learning from industry experts</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-camera text-5xl text-orange-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Traveling & Photography</h3>
+                    <p class="text-gray-600">Capturing beautiful moments and exploring new places to broaden my perspective</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-music text-5xl text-red-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Listening to Music</h3>
+                    <p class="text-gray-600">Music helps me relax and stay focused while coding and studying</p>
+                </div>
+                
+                <div class="text-center p-6 bg-gray-50 rounded-xl card-hover">
+                    <div class="hobby-icon mb-4">
+                        <i class="fas fa-graduation-cap text-5xl text-indigo-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Continuous Learning</h3>
+                    <p class="text-gray-600">Always eager to learn new skills and technologies to grow as a developer</p>
+                </div>
+            <
