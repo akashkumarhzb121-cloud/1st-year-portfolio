@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags provide metadata about the HTML document. -->
+    <!-- charset="UTF-8" sets the character encoding for the document. -->
+    <meta charset="UTF-8"> 
+    <!-- viewport meta tag makes the website responsive on all devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The title of the page, which appears in the browser tab. -->
+    <title>spotify:web player-music for everyone</title>
+    <!-- Linking Font Awesome for icons used throughout the page. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Linking the external CSS file for styling the page. -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Setting the favicon, the small icon in the browser tab. -->
+    <link rel="icon" href="./assets/logo.png" type="image/x-icon" />
+    <!-- Preconnecting to Google Fonts servers for faster font loading. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Importing the Montserrat font family from Google Fonts. -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- This is the main container that wraps the entire content of the page, including the sidebar and main content area. -->
+    <div class="main">    
+        <div class="sidebar">
+            <div class="navbar">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div> 
+                 <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+            
+                </div> 
+            </div>
+            <!-- This section represents the user's library. -->
+            <div class="library">
+                <div class="options">
+                  <div class="lib-option "> 
+                    <img src="./assets/library_icon.png" alt="#">
+                    <a href="#"> Your Library</a>                  
+                    </div> 
+                    <div class="icons">
+                      <i class="fa-solid fa-plus"></i>
+                       <i class="fa-solid fa-arrow-right"></i>
+                    </div>  
+                </div>
+                <!-- These boxes are call-to-action elements for creating playlists and browsing podcasts. -->
+                <div class="lib-box">
+                     <div class="box1">
+                    <p class="box-p1"> Create Your First Playlist</p>
+                    <p class="box-p2"> It's easy, we'll help you</p>
+                    <button class="badge1">Create Playlist</button>
+                </div>
+                 <div class="box2">
+                    <p class="box-p3"> Let's Find Some Podcast to Follow </p>
+                    <p class="box-p4"> we'll keep you updated on new episodes </p>
+                    <button class="badge2">Browse Podcast</button>
+                </div>
+                </div>
+               
+            </div>          
+        </div>
+        <!-- This div contains the main content of the web player. -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <!-- Navigation icons for going backward and forward. -->
+                <div class="sticky-nav-icons">
+                <img src="./assets/backward_icon.png">
+                <img src="./assets/forward_icon.png" class="hide">
+                </div>
+               <div class="sticky-nav-options">
+                 <button class="badge1 hide">Explore Premium</button>
+                 <button class="badge2" style="margin-right: 1rem;"> <i class="fa-solid fa-download" style="margin-right: 0.6rem;"></i> Install App</button>
+                 <i class="fa-solid fa-user" style="margin-top: 1rem;" ></i>
+               </div>
+               
+            </div>
+                <!-- This section displays the "Recently played" music cards. -->
+                <h2 class="recent">Recently played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title"> Top 50- Global </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+           
+                <h2 class="recent">Trending now near you</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title"> mahiye jinna sohna </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card3img.jpeg" class="card-img">
+                        <p class="card-title"> Mere paas tum ho </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card4img.jpeg" class="card-img">
+                        <p class="card-title"> Alter ego naa ready </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                     <div class="card">
+                        <img src="./assets/card2img.jpeg" class="card-img">
+                        <p class="card-title"> Top 50- Global </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <!-- This section is for featured charts like Top Songs globally and locally. -->
+                <h2 class="recent">Featured Chart</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card5img.jpeg" class="card-img">
+                        <p class="card-title"> Top Songs-Global </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card6img.jpeg" class="card-img">
+                        <p class="card-title"> Top Songs-India</p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" class="card-img">
+                        <p class="card-title"> Top 50- Global </p>
+                        <p class="card-info"> your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+               <!-- The footer section, which currently contains a decorative line. -->
+               <div class="footer">
+                <div class="line"></div>
+               </div>
+        </div>
+        <!-- This is the music player bar at the bottom of the page. -->
+        <div class="music-player">
+        <!-- This section shows the album art and song information of the currently playing track. -->
+        <div class="album">
+            <div class="album-img">
+                <img src="./Homework Assets/album_picture.jpeg" >
+            </div>
+            <div class="album-info">
+                <p class="album-info-first">Daylight</p>
+                <p class="album-info-second">David Kushner</p>
+            </div>
+            <div class="album-icon">
+                <img src="./Homework Assets/album_icon1.png" class="album-icon-img1">
+                <img src="./Homework Assets/album_icon2.png" class="album-icon-img2">
+            </div>
+        </div>
+        <!-- This section contains the main player controls and the progress bar. -->
+        <div class="player">
+            <div class="player-control">
+                <img src="./assets/player_icon1.png" class="player-control-icon">
+                <img src="./assets/player_icon2.png" class="player-control-icon">
+                <img src="./assets/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                <img src="./assets/player_icon4.png" class="player-control-icon">
+                <img src="./assets/player_icon5.png" class="player-control-icon">
+            </div>
+            <!-- The playback progress bar, showing current time and total duration. -->
+            <div class="playback-bar">
+                <span class="curr-time">02:00</span>
+                <input type="range" min="0" max="100" class="progress-bar" step="1">
+                <span class="tot-time">3:32</span>
+            </div>
+        </div>
+        <!-- This section holds additional controls like lyrics, queue, volume, etc. -->
+        <div class="controls">
+            <img src="./Homework Assets/controls_icon1.png" class="controls-icon1">
+            <img src="./Homework Assets/controld_icon2.png" class="controls-icon2">
+            <img src="./Homework Assets/controls_icon3.png" class="controls-icon3">
+            <img src="./Homework Assets/controls_icon4.png" class="controls-icon4">
+            <img src="./Homework Assets/controls_icon5.png" class="controls-icon5">
+            <input type="range" min="0" max="100" class="volume-bar" step="1" value="80" class="controls-icon6">
+           
+        </div> 
+        </div>
+    </div>
+</body>
+</html>
